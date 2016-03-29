@@ -6,7 +6,8 @@
   "homepage": "https://github.com/benbgl/bifox-api",
   "author": "Benjamin Bancroft <benjamin.bancroft@gardline.co.uk>",
   "dependencies": {
-    "express": "~4.1.1"
+    "express": "~4.1.1",
+    "mongoose": "^4.4.10"
   },
   "main": "server.js"
 }

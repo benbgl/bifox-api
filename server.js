@@ -1,5 +1,10 @@
-// Get Express
+// Get packages
 var express = require('express');
+var mongoose = require('mongoose');
+var CostPeriod = require('./bifox/models/costPeriod');
+
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost:27017/bifox');
 
 // Create an express applicatin
 var app = express();
@@ -28,5 +33,5 @@ app.use('/api', router);
 
 // Start the server
 app.listen(port);
-console.log('BiFoX API listening on port ' + port);
+console.log('BiFoX now API listening on port ' + port);
 
